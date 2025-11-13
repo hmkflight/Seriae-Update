@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Seriae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">SERIAE</a>
+            <ul class="nav-links">
+                <li><a href="collections.html">
+                    <span class="lang-en">collections</span>
+                    <span class="lang-ja">コレクション</span>
+                </a></li>
+                <li><a href="wholesale.html">
+                    <span class="lang-en">wholesale</span>
+                    <span class="lang-ja">卸売</span>
+                </a></li>
+                <li><a href="about.html">
+                    <span class="lang-en">about</span>
+                    <span class="lang-ja">について</span>
+                </a></li>
+                <li><a href="contact.html">
+                    <span class="lang-en">contact</span>
+                    <span class="lang-ja">お問い合わせ</span>
+                </a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-en">EN</span> / <span class="lang-jp">日本語</span>
+                </button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-content">
+        <div class="contact-container">
+            <!-- Header -->
+            <div style="text-align: center; margin-bottom: var(--space-2xl);">
+                <p class="accent-text">お問い合わせ</p>
+                <h1 style="margin-bottom: var(--space-sm);">
+                    <span class="lang-en">Get in Touch</span>
+                    <span class="lang-ja">お問い合わせ</span>
+                </h1>
+                <p style="color: var(--indigo); max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 2;">
+                    <span class="lang-en">We're here to help with any questions about our collection, shipping, or care instructions.</span>
+                    <span class="lang-ja">コレクション、配送、またはケア方法に関するご質問をお手伝いします。</span>
+                </p>
+            </div>
+
+            <!-- Contact Methods -->
+            <div class="contact-info">
+                <h3 style="margin-bottom: var(--space-md);">
+                    <span class="lang-en">How to Reach Us</span>
+                    <span class="lang-ja">お問い合わせ方法</span>
+                </h3>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h4>
+                            <span class="lang-en">Email</span>
+                            <span class="lang-ja">メール</span>
+                        </h4>
+                        <p>hello@seriae.com</p>
+                        <p style="font-size: 0.9rem; margin-top: var(--space-xs);">
+                            <span class="lang-en">We typically respond within 24 hours (Mon-Fri).</span>
+                            <span class="lang-ja">通常24時間以内に返信します（月〜金）。</span>
+                        </p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h4>Instagram</h4>
+                        <p>@seriae</p>
+                        <p style="font-size: 0.9rem; margin-top: var(--space-xs);">
+                            <span class="lang-en">Follow us for new arrivals, behind-the-scenes, and stories from our makers.</span>
+                            <span class="lang-ja">新着アイテム、舞台裏、作り手のストーリーをフォローしてください。</span>
+                        </p>
+                    </div>
+
+                    <div class="contact-method">
+                        <h4>
+                            <span class="lang-en">Newsletter</span>
+                            <span class="lang-ja">ニュースレター</span>
+                        </h4>
+                        <p>
+                            <span class="lang-en">Sign up to receive collection updates</span>
+                            <span class="lang-ja">コレクションの更新情報を受け取る</span>
+                        </p>
+                        <p style="font-size: 0.9rem; margin-top: var(--space-xs);">
+                            <span class="lang-en">We send thoughtful emails, not spam. Once a month at most.</span>
+                            <span class="lang-ja">スパムではなく、心のこもったメールを送信します。最大で月に1回。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div style="margin-top: var(--space-2xl); padding-top: var(--space-2xl); border-top: 1px solid var(--soft-gray);">
+                <h3 style="margin-bottom: var(--space-md);">
+                    <span class="lang-en">Customer Support</span>
+                    <span class="lang-ja">カスタマーサポート</span>
+                </h3>
+
+                <div style="display: grid; gap: var(--space-lg);">
+                    <div>
+                        <h4 style="margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Shipping</span>
+                            <span class="lang-ja">配送</span>
+                        </h4>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <strong><span class="lang-en">Free shipping</span><span class="lang-ja">送料無料</span></strong> <span class="lang-en">on all orders over $200.</span><span class="lang-ja">$200以上のすべての注文で。</span><br>
+                            <strong><span class="lang-en">Standard shipping</span><span class="lang-ja">標準配送</span></strong> <span class="lang-en">typically arrives in 3-5 business days.</span><span class="lang-ja">通常3〜5営業日で到着します。</span><br>
+                            <strong><span class="lang-en">International orders</span><span class="lang-ja">海外注文</span></strong> <span class="lang-en">are calculated at checkout.</span><span class="lang-ja">はチェックアウト時に計算されます。</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 style="margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Returns & Exchanges</span>
+                            <span class="lang-ja">返品・交換</span>
+                        </h4>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">We accept returns within <strong>14 days</strong> of delivery.<br>
+                            Items must be unused and in original condition.<br>
+                            Email us at hello@seriae.com to initiate a return.</span>
+                            <span class="lang-ja">配達後<strong>14日以内</strong>の返品を受け付けます。<br>
+                            商品は未使用で元の状態である必要があります。<br>
+                            返品を開始するにはhello@seriae.comまでメールしてください。</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 style="margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Product Care</span>
+                            <span class="lang-ja">製品のお手入れ</span>
+                        </h4>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">Each item comes with specific care instructions.<br>
+                            For handbags, we recommend gentle cleaning with appropriate leather care products.<br>
+                            Leather goods will develop a natural patina over time — this is intentional.</span>
+                            <span class="lang-ja">各アイテムには特定のお手入れ方法が付属しています。<br>
+                            ハンドバッグには、適切なレザーケア製品での優しいクリーニングをお勧めします。<br>
+                            レザー製品は時間とともに自然なパティナを発達させます - これは意図的なものです。</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 style="margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Authenticity</span>
+                            <span class="lang-ja">真正性</span>
+                        </h4>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">Every item in our collection is verified for authenticity.<br>
+                            We work with trusted luxury handbag authenticators.<br>
+                            If you have concerns about a product, please reach out immediately.</span>
+                            <span class="lang-ja">コレクションのすべてのアイテムは真正性が確認されています。<br>
+                            私たちは信頼できるラグジュアリーハンドバッグ認証機関と協力しています。<br>
+                            製品について懸念がある場合は、すぐにご連絡ください。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div style="margin-top: var(--space-2xl); text-align: center; padding: var(--space-lg); background-color: var(--cream); border-radius: 4px;">
+                <h4 style="margin-bottom: var(--space-sm);">Business Hours</h4>
+                <p style="color: var(--indigo); font-size: 0.95rem; line-height: 2;">
+                    Monday – Friday: 9:00 AM – 6:00 PM (EST)<br>
+                    Saturday & Sunday: Closed<br>
+                    <em>We're a small team, so please allow 1-2 business days for replies.</em>
+                </p>
+            </div>
+
+            <!-- Closing Note -->
+            <div style="margin-top: var(--space-2xl); text-align: center;">
+                <p style="color: var(--indigo); font-size: 1.05rem; line-height: 2; max-width: 600px; margin: 0 auto;">
+                    Thank you for your patience and understanding. We're here to make sure
+                    your experience with Seriae feels as intentional as the pieces we curate.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Seriae</h4>
+                <p style="color: var(--soft-gray); font-size: 0.95rem; line-height: 1.8;">
+                    <span class="lang-en">Curated retail inspired by Japanese craftsmanship and the beauty of intentional living.</span>
+                    <span class="lang-ja">日本の職人技と意図的な生活の美しさに触発されたキュレーション小売。</span>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Shop</span>
+                    <span class="lang-ja">ショップ</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="collections.html">
+                        <span class="lang-en">All Collections</span>
+                        <span class="lang-ja">全コレクション</span>
+                    </a></li>
+                    <li><a href="collections.html">
+                        <span class="lang-en">New Arrivals</span>
+                        <span class="lang-ja">新着</span>
+                    </a></li>
+                    <li><a href="wholesale.html">
+                        <span class="lang-en">Wholesale Portal</span>
+                        <span class="lang-ja">卸売ポータル</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Company</span>
+                    <span class="lang-ja">会社</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-ja">私たちについて</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-ja">お問い合わせ</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Support</span>
+                        <span class="lang-ja">サポート</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Connect</span>
+                    <span class="lang-ja">つながる</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Newsletter</span>
+                        <span class="lang-ja">ニュースレター</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Journal</span>
+                        <span class="lang-ja">ジャーナル</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                <span class="lang-en">© 2025 Seriae. Crafted with intention.</span>
+                <span class="lang-ja">© 2025 Seriae. 意図を持って作られています。</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        function toggleLanguage() {
+            const currentLang = document.body.getAttribute('data-lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ja' : 'en';
+
+            document.body.setAttribute('data-lang', newLang);
+            localStorage.setItem('preferredLanguage', newLang);
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            document.body.setAttribute('data-lang', savedLang);
+        });
+    </script>
+</body>
+</html>

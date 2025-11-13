@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seriae – Curated Modern Vintage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">SERIAE</a>
+            <ul class="nav-links">
+                <li><a href="collections.html">
+                    <span class="lang-en">collections</span>
+                    <span class="lang-ja">コレクション</span>
+                </a></li>
+                <li><a href="wholesale.html">
+                    <span class="lang-en">wholesale</span>
+                    <span class="lang-ja">卸売</span>
+                </a></li>
+                <li><a href="about.html">
+                    <span class="lang-en">about</span>
+                    <span class="lang-ja">について</span>
+                </a></li>
+                <li><a href="contact.html">
+                    <span class="lang-en">contact</span>
+                    <span class="lang-ja">お問い合わせ</span>
+                </a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-en">EN</span> / <span class="lang-jp">日本語</span>
+                </button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-content">
+        <!-- Hero Section - Immersive Intro -->
+        <section class="hero">
+            <!--
+                Background Options:
+
+                OPTION 1: Static Image (Currently Active)
+                - Beautiful, fast-loading image background
+                - Perfect Japanese minimalist aesthetic
+                - Save your image as 'hero-handbag.jpg' in the /images/ folder
+
+                OPTION 2: Video Background (Available)
+                - To use video instead, in style.css change:
+                  .hero-video { display: none; } to .hero-video { display: block; }
+                  .hero-image { display: block; } to .hero-image { display: none; }
+                - Then add your video file to /videos/seriae-intro.mp4
+            -->
+
+            <!-- Static Image Background (Active) -->
+            <div class="hero-image"></div>
+
+            <!-- Video Background (Hidden - see instructions above to enable) -->
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="https://cdn.coverr.co/videos/coverr-luxury-handbag-on-wooden-table-9527/1080p.mp4" type="video/mp4">
+                <source src="videos/seriae-intro.mp4" type="video/mp4">
+            </video>
+
+            <!-- Content Overlay -->
+            <div class="hero-content">
+                <div class="hero-logo">SERIAE</div>
+                <h1>
+                    <span class="lang-en">Where Craft Meets Intention</span>
+                    <span class="lang-ja">クラフトと意図が出会う場所</span>
+                </h1>
+                <button class="enter-collection-btn" onclick="scrollToCollection()">
+                    <span class="lang-en">Enter Collection</span>
+                    <span class="lang-ja">コレクションへ</span>
+                </button>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Brand Statement -->
+        <section class="container">
+            <div class="narrow-container text-center">
+                <h2>
+                    <span class="lang-en">Curated Luxury Handbags</span>
+                    <span class="lang-ja">厳選されたラグジュアリーハンドバッグ</span>
+                </h2>
+                <p style="font-size: 1.1rem; line-height: 2; color: var(--indigo);">
+                    <span class="lang-en">Seriae is not a marketplace. We are a direct retail destination for authenticated
+                    luxury handbags, selected with intention and presented with care. Each piece in our
+                    collection represents timeless design from the world's most prestigious houses —
+                    Louis Vuitton, Hermès, Gucci, Prada, and beyond.</span>
+                    <span class="lang-ja">Seriaeはマーケットプレイスではありません。私たちは、意図を持って選択され、丁寧に提示される、認証されたラグジュアリーハンドバッグの直販店です。コレクションの各作品は、ルイ・ヴィトン、エルメス、グッチ、プラダなど、世界で最も権威のあるメゾンの時代を超えたデザインを表しています。</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Collection Preview -->
+        <section id="collection" class="featured-section fade-in-on-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <p class="accent-text">新着</p>
+                    <h2 class="section-title">
+                        <span class="lang-en">Latest Arrivals</span>
+                        <span class="lang-ja">新着アイテム</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        <span class="lang-en">Handpicked pieces that speak to quality and character</span>
+                        <span class="lang-ja">品質と個性を語る厳選されたアイテム</span>
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product Card 1: Louis Vuitton Neverfull -->
+                    <a href="product.html" class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.fashionphile.com/cdn/shop/files/a770def5da7a31a4868067ff5aeb70b3.jpg" alt="Louis Vuitton Neverfull MM">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-brand">LOUIS VUITTON</p>
+                            <h4 class="product-name">Neverfull MM Monogram</h4>
+                            <p class="product-price">$1,850</p>
+                        </div>
+                    </a>
+
+                    <!-- Product Card 2: Gucci Dionysus -->
+                    <a href="product.html" class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.fashionphile.com/cdn/shop/files/f8dfd79a3926fda43b5383016d48669c.jpg" alt="Gucci Dionysus">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-brand">GUCCI</p>
+                            <h4 class="product-name">Dionysus Small Shoulder Bag</h4>
+                            <p class="product-price">$2,200</p>
+                        </div>
+                    </a>
+
+                    <!-- Product Card 3: Prada Galleria -->
+                    <a href="product.html" class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.fashionphile.com/cdn/shop/files/e53830a993d1f5c93b79a83b92813371.jpg" alt="Prada Galleria">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-brand">PRADA</p>
+                            <h4 class="product-name">Galleria Saffiano Tote</h4>
+                            <p class="product-price">$2,650</p>
+                        </div>
+                    </a>
+
+                    <!-- Product Card 4: Hermès Birkin -->
+                    <a href="product.html" class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.fashionphile.com/cdn/shop/files/396f0c791e7d0b15aacaac263620908f.jpg" alt="Hermès Birkin 30">
+                        </div>
+                        <div class="product-info">
+                            <p class="product-brand">HERMÈS</p>
+                            <h4 class="product-name">Birkin 30</h4>
+                            <p class="product-price">$15,500</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center mt-lg">
+                    <a href="collections.html" class="hero-cta">
+                        <span class="lang-en">Explore All</span>
+                        <span class="lang-ja">すべてを見る</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="container" style="padding: var(--space-2xl) 0;">
+            <div class="narrow-container text-center">
+                <p class="accent-text">私たちの哲学</p>
+                <h2>
+                    <span class="lang-en">Authenticated. Curated. Timeless.</span>
+                    <span class="lang-ja">認証済み。厳選。タイムレス。</span>
+                </h2>
+                <p style="font-size: 1.05rem; line-height: 2.2; color: var(--indigo); margin-top: var(--space-lg);">
+                    <span class="lang-en">Every handbag in the Seriae collection is authenticated, carefully selected for its
+                    enduring design, and presented with the same intention as a carefully prepared omakase.
+                    We sell directly to you — no marketplace, no sellers, just our curated selection of
+                    luxury pieces from the world's most coveted houses.</span>
+                    <span class="lang-ja">Seriaeコレクションのすべてのハンドバッグは認証済みで、永続的なデザインのために慎重に選択され、丁寧に用意されたおまかせと同じ意図で提示されます。私たちはあなたに直接販売します。マーケットプレイスも出品者もなく、世界で最も切望されるメゾンからの厳選されたラグジュアリーアイテムのみです。</span>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Seriae</h4>
+                <p style="color: var(--soft-gray); font-size: 0.95rem; line-height: 1.8;">
+                    <span class="lang-en">Curated retail inspired by Japanese craftsmanship and the beauty of intentional living.</span>
+                    <span class="lang-ja">日本の職人技と意図的な生活の美しさに触発されたキュレーション小売。</span>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Shop</span>
+                    <span class="lang-ja">ショップ</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="collections.html">
+                        <span class="lang-en">All Collections</span>
+                        <span class="lang-ja">全コレクション</span>
+                    </a></li>
+                    <li><a href="collections.html">
+                        <span class="lang-en">New Arrivals</span>
+                        <span class="lang-ja">新着</span>
+                    </a></li>
+                    <li><a href="wholesale.html">
+                        <span class="lang-en">Wholesale Portal</span>
+                        <span class="lang-ja">卸売ポータル</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Company</span>
+                    <span class="lang-ja">会社</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-ja">私たちについて</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-ja">お問い合わせ</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Support</span>
+                        <span class="lang-ja">サポート</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Connect</span>
+                    <span class="lang-ja">つながる</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Newsletter</span>
+                        <span class="lang-ja">ニュースレター</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Journal</span>
+                        <span class="lang-ja">ジャーナル</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                <span class="lang-en">© 2025 Seriae. Crafted with intention.</span>
+                <span class="lang-ja">© 2025 Seriae. 意図を持って作られています。</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        function toggleLanguage() {
+            const currentLang = document.body.getAttribute('data-lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ja' : 'en';
+
+            document.body.setAttribute('data-lang', newLang);
+            localStorage.setItem('preferredLanguage', newLang);
+        }
+
+        // Smooth Scroll to Collection
+        function scrollToCollection() {
+            const collection = document.getElementById('collection');
+            if (collection) {
+                collection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Scroll-triggered Fade-in Animations
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in-on-scroll');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight * 0.85) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            document.body.setAttribute('data-lang', savedLang);
+
+            // Initial check for scroll animations
+            handleScrollAnimations();
+
+            // Add scroll event listener for animations
+            window.addEventListener('scroll', handleScrollAnimations);
+        });
+    </script>
+</body>
+</html>

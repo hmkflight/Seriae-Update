@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wholesale Portal – Seriae</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="index.html" class="logo">SERIAE</a>
+            <ul class="nav-links">
+                <li><a href="collections.html">
+                    <span class="lang-en">collections</span>
+                    <span class="lang-ja">コレクション</span>
+                </a></li>
+                <li><a href="wholesale.html">
+                    <span class="lang-en">wholesale</span>
+                    <span class="lang-ja">卸売</span>
+                </a></li>
+                <li><a href="about.html">
+                    <span class="lang-en">about</span>
+                    <span class="lang-ja">について</span>
+                </a></li>
+                <li><a href="contact.html">
+                    <span class="lang-en">contact</span>
+                    <span class="lang-ja">お問い合わせ</span>
+                </a></li>
+                <li><button class="lang-toggle" onclick="toggleLanguage()">
+                    <span class="lang-en">EN</span> / <span class="lang-jp">日本語</span>
+                </button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="page-content">
+        <!-- Wholesale Hero -->
+        <section class="about-hero" style="padding: var(--space-2xl) 0 var(--space-xl);">
+            <div class="container">
+                <div class="narrow-container text-center">
+                    <p class="accent-text">卸売プログラム</p>
+                    <h1 style="margin-bottom: var(--space-lg);">
+                        <span class="lang-en">Wholesale Portal</span>
+                        <span class="lang-ja">卸売ポータル</span>
+                    </h1>
+                    <p style="color: var(--indigo); font-size: 1.15rem; line-height: 2.2; max-width: 650px; margin: 0 auto;">
+                        <span class="lang-en">For boutiques and collectors who share our devotion to craftsmanship.</span>
+                        <span class="lang-ja">職人技への献身を共有するブティックとコレクターのために。</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wholesale Program Overview -->
+        <section class="container" style="padding: var(--space-2xl) 0;">
+            <div class="narrow-container">
+                <h2 style="text-align: center; margin-bottom: var(--space-xl);">
+                    <span class="lang-en">Partner with Seriae</span>
+                    <span class="lang-ja">Seriaeとのパートナーシップ</span>
+                </h2>
+
+                <div style="display: grid; gap: var(--space-xl); margin-bottom: var(--space-2xl);">
+                    <div style="text-align: center; padding: var(--space-lg); background-color: var(--cream); border-radius: 4px;">
+                        <h3 style="color: var(--muted-red); font-size: 1.3rem; margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Curated Selection</span>
+                            <span class="lang-ja">厳選されたセレクション</span>
+                        </h3>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">Access to our authenticated luxury handbag collection with exclusive wholesale pricing. Every piece carefully selected for timeless appeal and investment value.</span>
+                            <span class="lang-ja">独占的な卸売価格で、認証済みラグジュアリーハンドバッグコレクションにアクセスできます。各作品は時代を超えた魅力と投資価値のために慎重に選択されています。</span>
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; padding: var(--space-lg); background-color: var(--cream); border-radius: 4px;">
+                        <h3 style="color: var(--muted-red); font-size: 1.3rem; margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Flexible Ordering</span>
+                            <span class="lang-ja">柔軟な注文</span>
+                        </h3>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">No minimum order quantities. Whether you're stocking a boutique or building a personal collection, we accommodate orders of all sizes with the same care and attention.</span>
+                            <span class="lang-ja">最小注文数量はありません。ブティックの在庫を揃える場合でも、個人コレクションを構築する場合でも、同じケアと注意を払ってあらゆるサイズの注文に対応します。</span>
+                        </p>
+                    </div>
+
+                    <div style="text-align: center; padding: var(--space-lg); background-color: var(--cream); border-radius: 4px;">
+                        <h3 style="color: var(--muted-red); font-size: 1.3rem; margin-bottom: var(--space-sm);">
+                            <span class="lang-en">Authentication Guarantee</span>
+                            <span class="lang-ja">真正性保証</span>
+                        </h3>
+                        <p style="color: var(--indigo); line-height: 2;">
+                            <span class="lang-en">Every handbag is rigorously authenticated and comes with our certification. We stand behind the quality and provenance of each piece in our collection.</span>
+                            <span class="lang-ja">すべてのハンドバッグは厳密に認証され、当社の認証が付属しています。コレクションの各作品の品質と出所を保証します。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wholesale Inquiry Form -->
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="narrow-container">
+                    <h2 style="text-align: center; margin-bottom: var(--space-lg);">
+                        <span class="lang-en">Apply for Wholesale Access</span>
+                        <span class="lang-ja">卸売アクセスを申請</span>
+                    </h2>
+
+                    <p style="text-align: center; color: var(--indigo); line-height: 2; margin-bottom: var(--space-xl);">
+                        <span class="lang-en">Complete the form below or contact us directly at <a href="mailto:wholesale@seriae.com" style="color: var(--muted-red);">wholesale@seriae.com</a></span>
+                        <span class="lang-ja">以下のフォームに記入するか、<a href="mailto:wholesale@seriae.com" style="color: var(--muted-red);">wholesale@seriae.com</a>まで直接お問い合わせください。</span>
+                    </p>
+
+                    <div class="contact-methods" style="max-width: 600px; margin: 0 auto;">
+                        <div class="contact-method">
+                            <h4 style="margin-bottom: var(--space-sm);">
+                                <span class="lang-en">Business Information</span>
+                                <span class="lang-ja">ビジネス情報</span>
+                            </h4>
+                            <p style="color: var(--indigo); font-size: 0.95rem; line-height: 2;">
+                                <span class="lang-en">Please provide your business name, type (boutique, gallery, personal collector), location, and website if applicable.</span>
+                                <span class="lang-ja">ビジネス名、タイプ（ブティック、ギャラリー、個人コレクター）、所在地、該当する場合はウェブサイトを提供してください。</span>
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4 style="margin-bottom: var(--space-sm);">
+                                <span class="lang-en">Contact Details</span>
+                                <span class="lang-ja">連絡先</span>
+                            </h4>
+                            <p style="color: var(--indigo); font-size: 0.95rem; line-height: 2;">
+                                <span class="lang-en">Your name, email address, and phone number for our wholesale team to reach you.</span>
+                                <span class="lang-ja">当社の卸売チームがご連絡できるよう、お名前、メールアドレス、電話番号をご記入ください。</span>
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4 style="margin-bottom: var(--space-sm);">
+                                <span class="lang-en">About Your Interest</span>
+                                <span class="lang-ja">ご興味について</span>
+                            </h4>
+                            <p style="color: var(--indigo); font-size: 0.95rem; line-height: 2;">
+                                <span class="lang-en">Tell us about your interest in partnering with Seriae and the types of pieces you're looking for.</span>
+                                <span class="lang-ja">Seriaeとのパートナーシップへのご興味と、お探しの作品のタイプについてお聞かせください。</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: var(--space-xl);">
+                        <a href="mailto:wholesale@seriae.com" class="hero-cta" style="display: inline-block;">
+                            <span class="lang-en">Contact Wholesale Team</span>
+                            <span class="lang-ja">卸売チームに連絡</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Statement -->
+        <section class="container" style="padding: var(--space-2xl) 0;">
+            <div class="narrow-container text-center">
+                <p style="color: var(--indigo); font-size: 1.05rem; line-height: 2.2;">
+                    <span class="lang-en">We carefully review each wholesale application to ensure alignment with our values of craftsmanship, authenticity, and intentional curation. Our team will respond within 2-3 business days.</span>
+                    <span class="lang-ja">私たちは、職人技、真正性、意図的なキュレーションという当社の価値観との整合性を確保するために、各卸売申請を慎重に審査します。チームは2〜3営業日以内に返信します。</span>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Seriae</h4>
+                <p style="color: var(--soft-gray); font-size: 0.95rem; line-height: 1.8;">
+                    <span class="lang-en">Curated retail inspired by Japanese craftsmanship and the beauty of intentional living.</span>
+                    <span class="lang-ja">日本の職人技と意図的な生活の美しさに触発されたキュレーション小売。</span>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Shop</span>
+                    <span class="lang-ja">ショップ</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="collections.html">
+                        <span class="lang-en">All Collections</span>
+                        <span class="lang-ja">全コレクション</span>
+                    </a></li>
+                    <li><a href="collections.html">
+                        <span class="lang-en">New Arrivals</span>
+                        <span class="lang-ja">新着</span>
+                    </a></li>
+                    <li><a href="wholesale.html">
+                        <span class="lang-en">Wholesale Portal</span>
+                        <span class="lang-ja">卸売ポータル</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Company</span>
+                    <span class="lang-ja">会社</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-ja">私たちについて</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-ja">お問い合わせ</span>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <span class="lang-en">Support</span>
+                        <span class="lang-ja">サポート</span>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>
+                    <span class="lang-en">Connect</span>
+                    <span class="lang-ja">つながる</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Newsletter</span>
+                        <span class="lang-ja">ニュースレター</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="lang-en">Journal</span>
+                        <span class="lang-ja">ジャーナル</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                <span class="lang-en">© 2025 Seriae. Crafted with intention.</span>
+                <span class="lang-ja">© 2025 Seriae. 意図を持って作られています。</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        function toggleLanguage() {
+            const currentLang = document.body.getAttribute('data-lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ja' : 'en';
+
+            document.body.setAttribute('data-lang', newLang);
+            localStorage.setItem('preferredLanguage', newLang);
+        }
+
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            document.body.setAttribute('data-lang', savedLang);
+        });
+    </script>
+</body>
+</html>
